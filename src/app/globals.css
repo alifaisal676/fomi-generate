@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+:root {
+  --bg: #fbfaf7;
+  --panel: #f8ede7;
+  --accent: #e49d86;
+  --accent-strong: #d07d60;  --link: #c6613f;
+  --selected: #f9efec;
+  --ink: #1a1a1a;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-link: var(--link);
+  --color-selected: var(--selected);
+  --color-ink: var(--ink);
+  --font-sans: var(--font-poppins);
+}
