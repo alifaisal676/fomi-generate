@@ -2,7 +2,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import { ToastProvider } from '@/components/ui/Toast';
 import MockupOverlay from '@/components/dev/MockupOverlay';
-
+import CursorSparkles from '@/components/ui/CursorSparkles';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
         <ToastProvider>{children}</ToastProvider>
         {process.env.NODE_ENV === 'development' && <MockupOverlay />}
       </body>
+      <CursorSparkles />
     </html>
   );
 }
