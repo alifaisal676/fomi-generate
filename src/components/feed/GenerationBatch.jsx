@@ -5,7 +5,7 @@ import { getAspectRatio } from '@/data/aspectRatios';
 import MediaTile from './MediaTile';
 import PromptCard from './PromptCard';
 
-function GenerationBatch({ batch, isHighlighted, onReuse, onRetry, onDismiss, onOpen }) {
+function GenerationBatch({ batch, isFirst, isHighlighted, onReuse, onRetry, onDismiss, onOpen }) {
   const { status, settings } = batch;
   const isVideo = settings.mode === 'video';
   const aspect = getAspectRatio(settings.ratio).value;
@@ -73,6 +73,7 @@ function GenerationBatch({ batch, isHighlighted, onReuse, onRetry, onDismiss, on
               aspect={aspect}
               onOpen={onOpen}
               className={wide}
+              preload={isFirst}
             />
           ))}
       </div>

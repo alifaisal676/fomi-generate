@@ -44,10 +44,11 @@ function GenerationFeed({ status, batches, highlightedId, onReload, onPickPrompt
 
   return (
     <section aria-label="Generations" className="space-y-6">
-      {batches.map((batch) => (
+      {batches.map((batch, index) => (
         <GenerationBatch
           key={batch.id}
           batch={batch}
+          isFirst={index === 0}
           isHighlighted={batch.id === highlightedId}
           {...handlers}
         />

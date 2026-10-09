@@ -9,7 +9,7 @@ import { useToast } from '@/components/ui/Toast';
 const TOOL =
   'pointer-events-auto grid size-8 place-items-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-[background-color,transform] duration-150 hover:bg-black/70 active:scale-90';
 
-function MediaTile({ item, index, total, batch, aspect, onOpen, className }) {
+function MediaTile({ item, index, total, batch, aspect, onOpen, className, preload = false }) {
   const toast = useToast();
   const videoRef = useRef(null);
   const [liked, setLiked] = useState(false);
@@ -50,6 +50,7 @@ function MediaTile({ item, index, total, batch, aspect, onOpen, className }) {
         src={isVideo ? item.poster : item.src}
         alt={label}
         sizes="(min-width: 1024px) 200px, 45vw"
+        preload={preload}
         className="transition-transform duration-500 group-hover:scale-[1.03]"
       />
       {isVideo && !videoFailed && (
