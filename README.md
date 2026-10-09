@@ -2,7 +2,7 @@
 
 A responsive, production-style implementation of the Fomi image/video generation screen, built for the Tarum frontend assessment (Part A).
 
-**Live demo:** _add your Vercel URL here_
+**Live demo:** https://fomi-generate.vercel.app/
 
 ## Stack
 
