@@ -43,7 +43,7 @@ export default function PickerPopover({
           sideOffset={8}
           collisionPadding={12}
           className={clsx(
-            'border-line bg-surface shadow-float data-[state=open]:animate-popover-in z-50 rounded-2xl border p-3',
+            'border-line bg-surface shadow-float data-[state=open]:animate-popover-in z-[90] rounded-2xl border p-3',
             contentClassName,
           )}
         >
