@@ -1,5 +1,6 @@
 import { DEFAULT_MODEL_BY_MODE } from './models';
 
+export const DEFAULT_RATIO_BY_MODE = { image: '2:3', video: '16:9' };
 export const DEFAULT_SETTINGS = {
   mode: 'image', // 'image' | 'video'
   prompt: '',
