@@ -127,7 +127,7 @@ export default function Workspace({ historyItems }) {
             ref={feedRef}
             id="feed"
             tabIndex={-1}
-            className="thin-scroll min-h-0 overflow-y-auto pt-[var(--strip-offset)] pb-28 focus:outline-none md:pb-6"
+            className="thin-scroll max-md:no-scrollbar min-h-0 overflow-y-auto pt-[var(--strip-offset)] pb-28 focus:outline-none md:pb-6"
           >
             <h1 className="sr-only">Create images and videos</h1>
             <GenerationFeed

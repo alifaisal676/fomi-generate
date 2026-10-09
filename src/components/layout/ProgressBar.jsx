@@ -22,7 +22,10 @@ export default function ProgressBar({ progress = null, className }) {
     : { 'aria-hidden': true };
 
   return (
-    <div className={clsx('bg-panel overflow-hidden', className)} {...a11yProps}>
+    <div
+      className={clsx('bg-panel overflow-hidden', !isActive && 'max-md:invisible', className)}
+      {...a11yProps}
+    >
       <div
         className="bg-accent-strong h-full rounded-[inherit] transition-[width] duration-500 ease-out"
         style={{ width: `${percent}%` }}

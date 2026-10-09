@@ -94,7 +94,7 @@ function MediaTile({ item, index, total, batch, aspect, onOpen, className, prelo
         className="absolute inset-0 z-10 cursor-zoom-in rounded-[inherit] focus-visible:-outline-offset-4"
       />
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-end gap-1.5 bg-linear-to-b from-black/35 to-transparent p-2 opacity-0 transition-opacity duration-200 group-focus-within:opacity-100 group-hover:opacity-100 pointer-coarse:opacity-100">
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex justify-end gap-1.5 bg-linear-to-b from-black/35 to-transparent p-2 opacity-0 transition-opacity duration-200 group-focus-within:opacity-100 group-hover:opacity-100">
         <button
           type="button"
           aria-pressed={liked}
