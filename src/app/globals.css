@@ -22,7 +22,7 @@
   --shadow-color: 120 70 50;
 
   /* History strip geometry (shared by the strip and the content under it) */
-  --strip-top: 0.5rem;
+  --strip-top: 0px;
   --strip-h: 4.5rem;
   --strip-offset: calc(var(--strip-top) + var(--strip-h) + 0.75rem);
 }
